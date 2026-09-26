@@ -1,0 +1,13 @@
+{
+	"name": "sourceTW_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sourceSqlTW_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

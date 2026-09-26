@@ -1,0 +1,37 @@
+{
+	"name": "sink_sql_ds2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sink_sql_ls2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "email",
+				"type": "nvarchar"
+			},
+			{
+				"name": "updated_at",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customer_staging"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
